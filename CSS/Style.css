@@ -1,0 +1,405 @@
+/* start Global */
+:root {
+  --mainColor: #e58f00;
+  --mainclr: #27272c;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Bree Serif', serif;
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 710px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* END GLOBAL */
+/* start header  */
+.header {
+  background-color: var(--mainclr);
+  background-blend-mode: multiply;
+  background-image: url(../img/background1.png);
+  padding: 10px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.header .container ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .container ul a {
+  text-decoration: none;
+  display: inline-flex;
+  margin-left: 10px;
+}
+.header .container ul li {
+  color: white;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.header .container ul a:hover li {
+  color: var(--mainColor);
+  border-bottom: 1px solid var(--mainColor);
+}
+/* END Header */
+/* start Pizza photo  */
+.pizza {
+  padding: 40px;
+}
+.pizza .image {
+  max-width: 612px;
+  height: 483.57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pizza .image img {
+  width: 87%;
+  position: relative;
+  right: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.pizza .info {
+  max-width: 500px;
+}
+.pizza .info h1 {
+  color: var(--mainColor);
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.pizza .info p {
+  color: white;
+  font-size: 22px;
+}
+.pizza .info a {
+  background-color: var(--mainColor);
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--mainclr);
+  font-size: 20px;
+  display: inline-block;
+}
+.pizza .info a:hover {
+  background-color: var(--mainclr);
+  color: var(--mainColor);
+}
+/* END Pizza photo  */
+/* start aboutus */
+.aboutus {
+  background-color: #17171e;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.aboutus .part01 {
+  display: flex;
+}
+.aboutus .part01 img {
+  width: 520px;
+  height: 520px;
+}
+.aboutus .container .info {
+  padding-left: 50px;
+  margin-top: 70px;
+  color: white;
+}
+.aboutus .container .info h1 {
+  font-size: 3em;
+}
+.aboutus .container .info p {
+  font-size: 2em;
+}
+/* End aboutus */
+/* start ourfood  */
+.ourfood {
+  background-color: #17171e;
+  padding-top: 75px;
+  padding-bottom: 130px;
+}
+.ourfood .container .text h1 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 50px;
+}
+.ourfood .container .image {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.ourfood .container .image img {
+  width: 100%;
+  margin-left: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.ourfood .container .image img:hover {
+  border: 3px solid var(--mainColor);
+  opacity: 0.9;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+/* End ourfood  */
+/* start EnjoyFood */
+.enjoyfood {
+  background-image: url(../img/Background2.png);
+  padding: 60px;
+  height: 690px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.enjoyfood .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 380px;
+  width: 500px;
+  background: #27272cc4;
+  text-align: center;
+  padding: 35px;
+  color: white;
+  border: 5px solid var(--mainColor);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.enjoyfood .text h3 {
+  font-size: 2em;
+}
+.enjoyfood .text p {
+  font-size: 24px;
+}
+/* end EnjoyFood */
+/* start our menu */
+.ourmenu {
+  background-color: #17171e;
+  padding-top: 75px;
+  padding-bottom: 130px;
+}
+.ourmenu .container > h1 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-bottom: -30px;
+}
+.ourmenu .container .porir {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 80px;
+}
+.ourmenu .container .col {
+  overflow: hidden;
+  margin-bottom: 25px;
+  width: 300px;
+}
+.ourmenu .container .porir .col h1 {
+  font-size: 22px;
+  color: var(--mainColor);
+}
+.ourmenu .container .porir .col p {
+  color: white;
+}
+.ourmenu .container .porir .col h2 {
+  color: var(--mainColor);
+}
+.ourmenu .container .porir .col img {
+  height: 270px;
+}
+/* end our menu */
+.enjoybestmeal {
+  padding: 20px;
+  background-color: var(--mainColor);
+  color: white;
+}
+.enjoybestmeal .petra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.enjoybestmeal .petra .info {
+  margin: 0 60px;
+}
+.enjoybestmeal .petra .info h3 {
+  font-size: 35px;
+}
+.enjoybestmeal .petra .info p {
+  font-size: 30px;
+}
+/* start Footer  */
+footer {
+  padding: 20px;
+  background-color: var(--mainclr);
+  text-align: center;
+}
+footer .container .logo img {
+  width: 260px;
+}
+footer .container .info ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 10px 0;
+}
+footer .container .info ul li:hover {
+  color: var(--mainColor);
+}
+footer .container .info a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+footer .container .social {
+  display: flex;
+  justify-content: center;
+}
+footer .container .social svg {
+  width: 50px;
+  height: 30px;
+  fill: white;
+}
+footer .container .social svg:hover {
+  fill: var(--mainColor);
+}
+/* end Footer  */
+/* start Media Query */
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .header .container ul {
+    display: none;
+  }
+  .header .container {
+    display: block;
+  }
+  .header .container ul ~ a {
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+  }
+  .pizza {
+    display: block;
+  }
+  .pizza .image {
+    display: none;
+  }
+  .pizza .info h1 {
+    font-size: 40px;
+  }
+  .ourfood .container .image img {
+    margin-left: 0;
+  }
+  .enjoyfood .text {
+    width: 270px;
+  }
+  .enjoyfood .text h3 {
+    font-size: 28px;
+  }
+  .enjoyfood .text p {
+    font-size: 17px;
+  }
+  .ourmenu .container .porir {
+    text-align: center;
+    place-content: center;
+    grid-template-columns: none;
+  }
+  .aboutus .part01 img {
+    display: none;
+  }
+  .aboutus .container .info {
+    padding-left: 0;
+    text-align: center;
+  }
+  .enjoybestmeal .petra {
+    display: block;
+    text-align: center;
+  }
+  .enjoybestmeal .petra .info {
+    margin: 0;
+  }
+  .enjoybestmeal .petra .info h3 {
+    font-size: 38px;
+  }
+  .enjoybestmeal .petra .info p {
+    font-size: 22px;
+  }
+  .enjoybestmeal .petra img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  footer .container .info ul {
+    display: block;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pizza .image img {
+    display: none;
+  }
+  .pizza .info {
+    max-width: 690px;
+  }
+  .aboutus .part01 {
+    display: block;
+    text-align: center;
+  }
+  .ourmenu .container .porir {
+    text-align: center;
+    place-content: center;
+    grid-template-columns: none;
+  }
+  .ourfood .container {
+    margin-left: 10px;
+  }
+  .enjoybestmeal .petra {
+    display: block;
+    text-align: center;
+  }
+  .enjoybestmeal .petra .info h3 {
+    font-size: 45px;
+  }
+}
